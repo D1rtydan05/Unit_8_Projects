@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML and CSS, 7th Edition
+   Tutorial 6
+   Case Problem 3
+
+   Calendar Style Sheet
+   Author: Daniel Garcia
+   Date:   11-26-19
+
+   Filename:   lht_tables.css
+
+*/
+
+/* ===============================
+   Mobile Styles: 0px to 640px 
+   ===============================
+*/
+@media only screen and (min-width:640){
+   
+   table#calendar, tbody, tr, td, th, caption{
+      display: block;
+   }
+   table#calendar thead h1{
+      display: none;
+   }
+   table#calendar caption{
+      color: white;
+      background-color: rgb(148, 148, 148);
+      font-size: 1.5em;
+      line-height: 2em;
+   }
+   table#calendar td{
+      border: 1px dotted gray;
+      color: rgb(11, 12, 145);
+      position: relative;
+      padding-left: 40%;
+      min-height: 40px;
+   }
+   table#calendar tr:nth-of-type(1){
+      background-color: rgb(255, 235, 178);
+      border: 2px solid gray;
+   }
+
+   
+}
+
+
+
+/* =============================================
+   Tablet and Desktop Styles: greater than 640px
+   =============================================
+*/
+@media only screen and (min-width:641){
+ 
+   table#calendar{
+      background-image: url(lht_photo1.png);
+      width: 100%;
+   }
+
+}
